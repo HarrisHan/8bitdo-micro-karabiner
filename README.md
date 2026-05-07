@@ -4,6 +4,8 @@
 >
 > Push-to-talk 语音输入 / Claude Code 一键 Approve / Ghostty 终端切 split / 切 tab / 唤起 Raycast — 全部脱离键盘。
 
+**[English](README.en.md)** · **中文**
+
 <p align="center">
   <img src="images/hero.jpg" alt="8BitDo Micro held in front of a Mac running Claude Code" width="600" />
 </p>
