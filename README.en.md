@@ -275,13 +275,6 @@ Replace the real `vendor_id` / `product_id` values into the JSON.
 
 Normal — Karabiner is waiting to see whether you'll combine it with another key. To eliminate the delay you can switch to `to_if_alone` mode (single press emits something), but then R / R2 can't be a pure modifier anymore.
 
-### Q: Where did the screenshot shortcut go?
-
-The original config had R2 = `Cmd+Shift+5` (screenshot panel), but it was repurposed into a tab modifier. To reclaim screenshot:
-
-- macOS built-in shortcuts: `Cmd+Shift+4` for area screenshot, `Cmd+Shift+5` for the screenshot/recording panel — your regular keyboard still works
-- Or: in 8BitDo Ultimate Software, remap the **Star ★** key to emit a real keycode and add a new manipulator for it in this rule
-
 ---
 
 ## 🗂️ Repo structure

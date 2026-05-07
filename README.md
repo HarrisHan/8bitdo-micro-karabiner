@@ -274,13 +274,6 @@ curl -L https://raw.githubusercontent.com/HarrisHan/8bitdo-micro-karabiner/main/
 
 正常 — Karabiner 在等是否会接「R + 其他键」的组合。如果想消除延迟，可以把 R 改成 `to_if_alone` 模式（单按发某个键），但那样 R 就不能再当纯 modifier 了。
 
-### Q: 我的截屏功能没有了
-
-原方案中 R2 是 `Cmd+Shift+5`（截屏面板），后改为 modifier 让位给 tab 切换。如果想找回截屏：
-
-- macOS 自带快捷键：`Cmd+Shift+4` 区域截屏 / `Cmd+Shift+5` 截屏录屏面板（直接键盘按）
-- 或者在 8BitDo Ultimate Software 里把 **Star ⭐** 键映射成发某个 keycode，然后在本规则里加新 manipulator
-
 ---
 
 ## 🗂️ 仓库结构
