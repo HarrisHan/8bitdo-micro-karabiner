@@ -79,11 +79,7 @@
 
 ### 步骤 1：把 8BitDo 切到 Keyboard 模式
 
-8BitDo Micro **底部边缘有一个三档物理拨动开关**，标着 `s` / `d` / `k` 三个档位 — **拨到 `k` 档**（最右）就是 Keyboard 模式，手柄会被 macOS 识别为蓝牙键盘。
-
-<p align="center">
-  <img src="images/mode-switch.svg" alt="8BitDo Micro mode selector slide switch" width="100%" />
-</p>
+8BitDo Micro **底部边缘有一个三档物理拨动开关**，标着 `s` / `d` / `k` 三个档位 — **拨到 `k` 档**就是 Keyboard 模式，手柄会被 macOS 识别为蓝牙键盘。
 
 | 档位 | 模式 | 用途 |
 |---|---|---|
