@@ -5,9 +5,7 @@
 > Push-to-talk 语音输入 / Claude Code 一键 Approve / Ghostty 终端切 split / 切 tab / 唤起 Raycast — 全部脱离键盘。
 
 <p align="center">
-  <img src="images/hero.jpg" alt="8BitDo Micro on Mac desk" width="600" />
-  <br/>
-  <em>📷 待补：手柄 + Mac 工作场景 hero 照</em>
+  <img src="images/hero.jpg" alt="8BitDo Micro held in front of a Mac running Claude Code" width="600" />
 </p>
 
 ---
@@ -28,9 +26,15 @@
 ## 🗺️ 完整按键映射
 
 <p align="center">
+  <img src="images/product.jpg" alt="8BitDo Micro overview with original packaging" width="500" />
+  <br/>
+  <em>8BitDo Micro 绿色版 — 仅 30g，可单手握持</em>
+</p>
+
+<p align="center">
   <img src="images/keymap.png" alt="Full keymap diagram" width="700" />
   <br/>
-  <em>📷 待补：标注了所有 17 个键映射后功能的全景图</em>
+  <em>📷 待补：在产品图基础上做 callout 标注的全键位映射图</em>
 </p>
 
 ### 默认层（不按 modifier）

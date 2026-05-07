@@ -1,15 +1,14 @@
-# Images placeholder
+# Images
 
-放置以下 6 张图片：
-
-| 文件名 | 内容 | 优先级 |
+| 文件名 | 状态 | 内容 |
 |---|---|---|
-| `hero.jpg` | 8BitDo Micro 放在 Mac 旁边的工作场景照片（建议 1600x900 横版，展示"小手柄 + 大屏幕"的对比） | ⭐⭐⭐ 必须 |
-| `keymap.png` | 标注了所有 17 个键映射后功能的全景示意图（可以用 Figma / Excalidraw / Photoshop 在产品图上画 callout 标注） | ⭐⭐⭐ 必须 |
-| `mode-switch.png` | 8BitDo 4 种模式切换组合键的示意图（Start+B → Keyboard / Start+Y → Switch / Start+X → Android / Start+A → iOS） | ⭐⭐ 推荐 |
-| `split-demo.gif` | Ghostty 4 split 布局下，按 R+方向键切焦点的录屏（gif < 5MB） | ⭐ 可选 |
-| `tab-demo.gif` | Ghostty 多 tab 下按 R2+左右切 tab 的录屏 | ⭐ 可选 |
-| `claude-code-demo.gif` | Claude Code 里用方向键 + A 键 Approve 的演示 | ⭐ 可选 |
+| `hero.jpg` | ✅ 已就位 | 8BitDo Micro 在 Mac 屏幕前的工作场景照（背景是 Claude Code 终端） |
+| `product.jpg` | ✅ 已就位 | 8BitDo Micro 实物 + 原包装盒 |
+| `keymap.png` | ❌ 待补 | 标注了所有 17 个键映射后功能的全景示意图（建议在 `product.jpg` 基础上用 Figma / Excalidraw 画 callout 标注） |
+| `mode-switch.png` | ❌ 待补 | 4 种模式切换组合键示意图（Start+B → Keyboard / Start+Y → Switch / Start+X → Android / Start+A → iOS） |
+| `split-demo.gif` | ⭐ 可选 | Ghostty 多 split 下按 R+方向键切焦点的录屏（< 5MB） |
+| `tab-demo.gif` | ⭐ 可选 | Ghostty 多 tab 下按 R2+左右切 tab 的录屏 |
+| `claude-code-demo.gif` | ⭐ 可选 | Claude Code 里用方向键 + A 键 Approve 的演示 |
 
 ## 拍摄 / 制作建议
 
