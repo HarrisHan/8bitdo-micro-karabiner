@@ -1,110 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif">
-  <rect width="1200" height="600" fill="#fafafa"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#fafafa"/>
 
-  <!-- Title -->
-  <text x="600" y="60" text-anchor="middle" font-size="32" font-weight="700" fill="#1d1d1f">8BitDo Micro Mode Switching</text>
-  <text x="600" y="92" text-anchor="middle" font-size="14" fill="#86868b">Hold combo for 3 seconds at power-on. LED color confirms mode. <tspan font-weight="600" fill="#AF52DE">Keyboard mode is required for this repo.</tspan></text>
+  <!-- ===== Title ===== -->
+  <text x="600" y="55" text-anchor="middle" font-size="32" font-weight="700" fill="#1d1d1f">8BitDo Micro Mode Selector</text>
+  <text x="600" y="88" text-anchor="middle" font-size="15" fill="#86868b">Three-position physical slide switch on the <tspan font-weight="600" fill="#1d1d1f">bottom edge</tspan> — slide to <tspan font-weight="700" fill="#AF52DE">k</tspan> for Mac keyboard mode</text>
 
-  <!-- 4 columns -->
-  <g transform="translate(50, 140)">
+  <!-- ===== Slide Switch Illustration ===== -->
+  <g transform="translate(300, 140)">
+    <!-- Hint arrow above k position -->
+    <text x="500" y="20" text-anchor="middle" font-size="13" font-weight="600" fill="#AF52DE" letter-spacing="1">SLIDE TO HERE</text>
+    <path d="M 500 30 L 500 55 L 490 45 M 500 55 L 510 45" stroke="#AF52DE" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 
-    <!-- ===== Keyboard mode (highlighted) ===== -->
+    <!-- Switch body (the housing) -->
+    <rect x="0" y="70" width="600" height="100" rx="14" fill="#1d1d1f"/>
+    <rect x="6" y="76" width="588" height="88" rx="10" fill="#2c2c2e"/>
+
+    <!-- Subtle track -->
+    <rect x="40" y="105" width="520" height="30" rx="15" fill="#1d1d1f"/>
+
+    <!-- Position dividers (thin marks) -->
+    <line x1="200" y1="110" x2="200" y2="130" stroke="#444" stroke-width="1"/>
+    <line x1="400" y1="110" x2="400" y2="130" stroke="#444" stroke-width="1"/>
+
+    <!-- Slider knob (in 'k' position) -->
+    <rect x="455" y="92" width="100" height="56" rx="10" fill="#FFFFFF" stroke="#AF52DE" stroke-width="3"/>
+    <rect x="465" y="100" width="80" height="2" fill="#AF52DE" opacity="0.3"/>
+    <rect x="465" y="106" width="80" height="2" fill="#AF52DE" opacity="0.3"/>
+    <rect x="465" y="112" width="80" height="2" fill="#AF52DE" opacity="0.3"/>
+    <text x="505" y="135" text-anchor="middle" font-size="22" font-weight="900" fill="#AF52DE">k</text>
+
+    <!-- Position labels under switch -->
+    <text x="100" y="200" text-anchor="middle" font-size="22" font-weight="700" fill="#86868b">s</text>
+    <text x="300" y="200" text-anchor="middle" font-size="22" font-weight="700" fill="#86868b">d</text>
+    <text x="500" y="200" text-anchor="middle" font-size="26" font-weight="900" fill="#AF52DE">k</text>
+
+    <!-- Caption -->
+    <text x="300" y="235" text-anchor="middle" font-size="11" fill="#86868b" font-style="italic">Bottom edge of the controller — slide left/right with your thumbnail</text>
+  </g>
+
+  <!-- ===== 3 Mode Cards ===== -->
+  <g transform="translate(50, 420)">
+
+    <!-- 's' card -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="260" height="350" rx="18" fill="#FFFFFF" stroke="#AF52DE" stroke-width="3"/>
-
-      <!-- Mode header -->
-      <rect x="20" y="20" width="220" height="36" rx="8" fill="#AF52DE"/>
-      <text x="130" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF" letter-spacing="2">KEYBOARD</text>
-
-      <!-- Required tag -->
-      <rect x="80" y="70" width="100" height="20" rx="10" fill="#FFE5EC" stroke="#AF52DE" stroke-width="1"/>
-      <text x="130" y="85" text-anchor="middle" font-size="10" font-weight="700" fill="#AF52DE">★ THIS REPO ★</text>
-
-      <!-- Combo -->
-      <text x="130" y="135" text-anchor="middle" font-size="12" fill="#86868b" letter-spacing="1">HOLD COMBO ON POWER-ON</text>
-      <g transform="translate(130, 175)">
-        <rect x="-72" y="-22" width="60" height="40" rx="8" fill="#1d1d1f"/>
-        <text x="-42" y="4" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Start</text>
-        <text x="0" y="6" text-anchor="middle" font-size="22" font-weight="800" fill="#1d1d1f">+</text>
-        <rect x="12" y="-22" width="40" height="40" rx="8" fill="#1d1d1f"/>
-        <text x="32" y="4" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">B</text>
-      </g>
-
-      <!-- LED -->
-      <text x="130" y="240" text-anchor="middle" font-size="12" fill="#86868b" letter-spacing="1">LED COLOR</text>
-      <circle cx="130" cy="275" r="18" fill="#AF52DE" stroke="#1d1d1f" stroke-width="1.5"/>
-      <circle cx="125" cy="270" r="5" fill="#FFFFFF" opacity="0.4"/>
-      <text x="130" y="318" text-anchor="middle" font-size="14" font-weight="700" fill="#1d1d1f">Purple</text>
+      <rect x="0" y="0" width="360" height="220" rx="16" fill="#FFFFFF" stroke="#e5e5e7" stroke-width="2"/>
+      <rect x="20" y="20" width="60" height="60" rx="12" fill="#f2f2f7"/>
+      <text x="50" y="68" text-anchor="middle" font-size="36" font-weight="900" fill="#1d1d1f">s</text>
+      <text x="100" y="50" font-size="18" font-weight="700" fill="#1d1d1f" letter-spacing="2">SWITCH</text>
+      <text x="100" y="72" font-size="12" fill="#86868b">Nintendo Switch console</text>
+      <line x1="20" y1="100" x2="340" y2="100" stroke="#e5e5e7" stroke-width="1"/>
+      <text x="20" y="130" font-size="13" fill="#1d1d1f">• For docked / handheld Switch</text>
+      <text x="20" y="155" font-size="13" fill="#1d1d1f">• Standard gamepad input</text>
+      <text x="20" y="180" font-size="13" fill="#1d1d1f">• Won't work for Karabiner mapping</text>
     </g>
 
-    <!-- ===== Switch mode ===== -->
-    <g transform="translate(280, 0)">
-      <rect x="0" y="0" width="260" height="350" rx="18" fill="#FFFFFF" stroke="#e5e5e7" stroke-width="2"/>
-
-      <rect x="20" y="20" width="220" height="36" rx="8" fill="#f2f2f7"/>
-      <text x="130" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#1d1d1f" letter-spacing="2">SWITCH</text>
-
-      <text x="130" y="135" text-anchor="middle" font-size="12" fill="#86868b" letter-spacing="1">HOLD COMBO ON POWER-ON</text>
-      <g transform="translate(130, 175)">
-        <rect x="-72" y="-22" width="60" height="40" rx="8" fill="#1d1d1f"/>
-        <text x="-42" y="4" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Start</text>
-        <text x="0" y="6" text-anchor="middle" font-size="22" font-weight="800" fill="#1d1d1f">+</text>
-        <rect x="12" y="-22" width="40" height="40" rx="8" fill="#1d1d1f"/>
-        <text x="32" y="4" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Y</text>
-      </g>
-
-      <text x="130" y="240" text-anchor="middle" font-size="12" fill="#86868b" letter-spacing="1">LED COLOR</text>
-      <circle cx="130" cy="275" r="18" fill="#34C759" stroke="#1d1d1f" stroke-width="1.5"/>
-      <circle cx="125" cy="270" r="5" fill="#FFFFFF" opacity="0.4"/>
-      <text x="130" y="318" text-anchor="middle" font-size="14" font-weight="700" fill="#1d1d1f">Green</text>
+    <!-- 'd' card -->
+    <g transform="translate(370, 0)">
+      <rect x="0" y="0" width="360" height="220" rx="16" fill="#FFFFFF" stroke="#e5e5e7" stroke-width="2"/>
+      <rect x="20" y="20" width="60" height="60" rx="12" fill="#f2f2f7"/>
+      <text x="50" y="68" text-anchor="middle" font-size="36" font-weight="900" fill="#1d1d1f">d</text>
+      <text x="100" y="50" font-size="18" font-weight="700" fill="#1d1d1f" letter-spacing="2">D-INPUT</text>
+      <text x="100" y="72" font-size="12" fill="#86868b">Android, Windows, Steam</text>
+      <line x1="20" y1="100" x2="340" y2="100" stroke="#e5e5e7" stroke-width="1"/>
+      <text x="20" y="130" font-size="13" fill="#1d1d1f">• Generic HID gamepad protocol</text>
+      <text x="20" y="155" font-size="13" fill="#1d1d1f">• For mobile games / emulators</text>
+      <text x="20" y="180" font-size="13" fill="#1d1d1f">• Won't work for Karabiner mapping</text>
     </g>
 
-    <!-- ===== Android mode ===== -->
-    <g transform="translate(560, 0)">
-      <rect x="0" y="0" width="260" height="350" rx="18" fill="#FFFFFF" stroke="#e5e5e7" stroke-width="2"/>
-
-      <rect x="20" y="20" width="220" height="36" rx="8" fill="#f2f2f7"/>
-      <text x="130" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#1d1d1f" letter-spacing="2">ANDROID</text>
-
-      <text x="130" y="135" text-anchor="middle" font-size="12" fill="#86868b" letter-spacing="1">HOLD COMBO ON POWER-ON</text>
-      <g transform="translate(130, 175)">
-        <rect x="-72" y="-22" width="60" height="40" rx="8" fill="#1d1d1f"/>
-        <text x="-42" y="4" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Start</text>
-        <text x="0" y="6" text-anchor="middle" font-size="22" font-weight="800" fill="#1d1d1f">+</text>
-        <rect x="12" y="-22" width="40" height="40" rx="8" fill="#1d1d1f"/>
-        <text x="32" y="4" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">X</text>
-      </g>
-
-      <text x="130" y="240" text-anchor="middle" font-size="12" fill="#86868b" letter-spacing="1">LED COLOR</text>
-      <circle cx="130" cy="275" r="18" fill="#FF3B30" stroke="#1d1d1f" stroke-width="1.5"/>
-      <circle cx="125" cy="270" r="5" fill="#FFFFFF" opacity="0.4"/>
-      <text x="130" y="318" text-anchor="middle" font-size="14" font-weight="700" fill="#1d1d1f">Red</text>
-    </g>
-
-    <!-- ===== iOS mode ===== -->
-    <g transform="translate(840, 0)">
-      <rect x="0" y="0" width="260" height="350" rx="18" fill="#FFFFFF" stroke="#e5e5e7" stroke-width="2"/>
-
-      <rect x="20" y="20" width="220" height="36" rx="8" fill="#f2f2f7"/>
-      <text x="130" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#1d1d1f" letter-spacing="2">iOS</text>
-
-      <text x="130" y="135" text-anchor="middle" font-size="12" fill="#86868b" letter-spacing="1">HOLD COMBO ON POWER-ON</text>
-      <g transform="translate(130, 175)">
-        <rect x="-72" y="-22" width="60" height="40" rx="8" fill="#1d1d1f"/>
-        <text x="-42" y="4" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Start</text>
-        <text x="0" y="6" text-anchor="middle" font-size="22" font-weight="800" fill="#1d1d1f">+</text>
-        <rect x="12" y="-22" width="40" height="40" rx="8" fill="#1d1d1f"/>
-        <text x="32" y="4" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">A</text>
-      </g>
-
-      <text x="130" y="240" text-anchor="middle" font-size="12" fill="#86868b" letter-spacing="1">LED COLOR</text>
-      <circle cx="130" cy="275" r="18" fill="#FFCC00" stroke="#1d1d1f" stroke-width="1.5"/>
-      <circle cx="125" cy="270" r="5" fill="#FFFFFF" opacity="0.4"/>
-      <text x="130" y="318" text-anchor="middle" font-size="14" font-weight="700" fill="#1d1d1f">Yellow</text>
+    <!-- 'k' card (highlighted) -->
+    <g transform="translate(740, 0)">
+      <rect x="0" y="0" width="360" height="220" rx="16" fill="#FFFFFF" stroke="#AF52DE" stroke-width="3"/>
+      <rect x="20" y="20" width="60" height="60" rx="12" fill="#F3E5FF"/>
+      <text x="50" y="68" text-anchor="middle" font-size="36" font-weight="900" fill="#AF52DE">k</text>
+      <text x="100" y="50" font-size="18" font-weight="700" fill="#AF52DE" letter-spacing="2">KEYBOARD</text>
+      <text x="100" y="72" font-size="12" fill="#86868b">Mac / iOS as Bluetooth keyboard</text>
+      <rect x="240" y="22" width="100" height="22" rx="11" fill="#AF52DE"/>
+      <text x="290" y="38" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">★ THIS REPO ★</text>
+      <line x1="20" y1="100" x2="340" y2="100" stroke="#F3E5FF" stroke-width="1"/>
+      <text x="20" y="130" font-size="13" fill="#1d1d1f">• Sends standard HID keyboard events</text>
+      <text x="20" y="155" font-size="13" fill="#1d1d1f">• <tspan font-weight="700">Required for Karabiner mapping</tspan></text>
+      <text x="20" y="180" font-size="13" fill="#1d1d1f">• Pairs as "8BitDo Micro gamepad"</text>
     </g>
 
   </g>
 
-  <!-- Footer note -->
-  <text x="600" y="540" text-anchor="middle" font-size="12" font-style="italic" fill="#86868b">⚠️  LED colors may vary slightly by firmware version. Check 8BitDo official docs if your unit differs.</text>
+  <!-- ===== Footer note ===== -->
+  <text x="600" y="675" text-anchor="middle" font-size="12" font-style="italic" fill="#86868b">No power-cycle needed — slide the switch and the new mode is active immediately.</text>
 </svg>

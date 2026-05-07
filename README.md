@@ -79,18 +79,19 @@
 
 ### 步骤 1：把 8BitDo 切到 Keyboard 模式
 
-按住手柄上的 **`Start + B`** 键 3 秒（开机时），LED 变成对应模式的颜色。Keyboard 模式下手柄会被 macOS 识别为蓝牙键盘。
+8BitDo Micro **底部边缘有一个三档物理拨动开关**，标着 `s` / `d` / `k` 三个档位 — **拨到 `k` 档**（最右）就是 Keyboard 模式，手柄会被 macOS 识别为蓝牙键盘。
 
 <p align="center">
-  <img src="images/mode-switch.svg" alt="8BitDo mode switch combos" width="100%" />
+  <img src="images/mode-switch.svg" alt="8BitDo Micro mode selector slide switch" width="100%" />
 </p>
 
-| 目标模式 | 切换组合键（开机时按住） | 颜色 |
+| 档位 | 模式 | 用途 |
 |---|---|---|
-| **Keyboard（本配置需要的）** | `Start + B` | 紫色 |
-| Switch | `Start + Y` | 绿色 |
-| Android (D-input) | `Start + X` | 红色 |
-| iOS | `Start + A` | 黄色 |
+| `s` | **S**witch | Nintendo Switch 主机 |
+| `d` | **D**-input | Android / Windows 通用 gamepad |
+| **`k`** | **K**eyboard ⭐ | **Mac / iOS 当作蓝牙键盘 — 本仓库需要这档** |
+
+> 💡 不需要任何按键组合，也不需要重启手柄，拨过去立刻生效。Keyboard 模式下手柄发出标准 HID 键盘事件，Karabiner 才能拦截。
 
 ### 步骤 2：和 Mac 配对
 
