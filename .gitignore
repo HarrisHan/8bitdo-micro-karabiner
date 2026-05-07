@@ -4,3 +4,8 @@
 .idea/
 .vscode/
 node_modules/
+
+# Local agent / IDE state — never commit these
+.omc/
+.claude/
+.cursor/
