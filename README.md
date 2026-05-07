@@ -32,9 +32,7 @@
 </p>
 
 <p align="center">
-  <img src="images/keymap.png" alt="Full keymap diagram" width="700" />
-  <br/>
-  <em>📷 待补：在产品图基础上做 callout 标注的全键位映射图</em>
+  <img src="images/keymap.svg" alt="Full keymap diagram" width="100%" />
 </p>
 
 ### 默认层（不按 modifier）
@@ -84,9 +82,7 @@
 按住手柄上的 **`Start + B`** 键 3 秒（开机时），LED 变成对应模式的颜色。Keyboard 模式下手柄会被 macOS 识别为蓝牙键盘。
 
 <p align="center">
-  <img src="images/mode-switch.png" alt="8BitDo mode switch combos" width="500" />
-  <br/>
-  <em>📷 待补：4 种模式（Switch / Android / iOS / Keyboard）的切换组合键示意图</em>
+  <img src="images/mode-switch.svg" alt="8BitDo mode switch combos" width="100%" />
 </p>
 
 | 目标模式 | 切换组合键（开机时按住） | 颜色 |
