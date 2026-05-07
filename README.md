@@ -230,7 +230,7 @@ curl -L https://raw.githubusercontent.com/HarrisHan/8bitdo-micro-karabiner/main/
 ### Q: 8BitDo 没反应
 
 确认下 5 件事：
-1. 手柄是不是在 **Keyboard 模式**（紫色 LED） — 不是的话按 `Start+B` 切
+1. 底部拨档是不是在 **`k`**（Keyboard 模式） — 不是的话拨过去即可，无需重启手柄
 2. macOS 蓝牙里手柄状态是 **Connected**
 3. Karabiner-Elements 主界面顶部 Status 是绿色（无错误）
 4. `Complex Modifications` 标签页里规则是 **Enabled**
